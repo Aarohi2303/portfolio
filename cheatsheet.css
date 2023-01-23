@@ -1,0 +1,28 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(188, 188, 188);
+    color: white;
+}
+nav h1{
+    font-family: 'Roboto', sans-serif;
+}
+/* .logo{
+
+} */
+.logo img{
+    height: 80px;
+    width: 80px;
+}
+.container{
+    width: 10vw;
+    margin: auto;
+    padding: 30px 0;
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+}

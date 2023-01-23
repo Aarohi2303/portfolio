@@ -1,0 +1,91 @@
+
+        body{
+            height: 95vh;
+            background-color: rgb(131, 126, 126);
+            
+        }
+        .containar{
+            color: white;
+            background-color: rgb(235, 45, 45);
+            height: 95vh;
+            width: 98vw;
+            margin: 0;
+            padding: 0;
+        }
+        nav .initial li{
+            list-style: none;
+            font-family: 'Courier New', Courier, monospace;
+            font-weight: bold;
+            font-size: 24px;
+            display: inline-block;
+            padding: 10px;
+        }
+        nav .initial li:hover{
+            color:rgb(255, 234, 5);
+        }
+        nav .first{
+            display: flex;
+            flex-direction: row-reverse;
+            
+        }
+        .first li{
+            list-style: none;
+            margin: 2px 1px 1px 5px;
+            
+        }
+        .first li a{
+            text-decoration: none;
+            padding: 10px 20px;
+            font-family:'Courier New', Courier, monospace;
+            font-weight: bold;
+            font-size: 18px; 
+            
+        }
+        .first li a:hover{
+            color: cyan;
+        }
+        .second li{
+            display: none;
+        }
+        .first .imp:hover{
+            display: block;
+        }
+        .box{
+            display: flex;
+        }
+        .start{
+            margin: 20px;
+            padding-top: 90px;
+            padding-left: 70px;
+            margin-left: 70px;
+        }
+        .start h3 span{
+            font-size: 26px;
+        }
+        .start .btn{
+            background-color: rgb(162, 221, 164);
+            border: none;
+            margin: 2px 4px;
+            padding: 12px 2px;
+        }
+        .start .btn a{
+            text-decoration: none;
+            padding: 10px 20px;
+            color: rgb(2, 0, 0);
+            font-size: 14px;
+        }
+        .start .btn a:hover{
+            color: rgb(149, 1, 1);
+            background-color: aliceblue;
+        }
+        .imgg{
+            margin-left: 320px;
+            margin-top: 50px;
+            
+        }
+        .imgg img{
+            border-radius: 40%;
+            height: 350px;
+            width: 400px;
+        }
+        

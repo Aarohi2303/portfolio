@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AboutPage</title>
+    <!-- <link rel="stylesheet" href="first.css"> -->
+    <!-- <link rel="stylesheet" media="screen and (max-width:1270px)" href="phone.css">
+    <link rel="stylesheet" media="screen and (max-width:470px)" href="phone1.css">
+    <link rel="stylesheet" media="screen and (max-width:270px)" href="phone2.css"> -->
+    <style>
+        body{
+            height: 95vh;
+            background-color: rgb(42, 201, 158);
+            width: 95vw;
+            
+        }
+        .containar{
+            color: white;
+            background-color: rgb(19, 135, 189);
+            height: 95vh;
+            width: 97vw;
+            margin: 0;
+            padding: 0;
+        }
+        nav .initial li{
+            list-style: none;
+            font-family: 'Courier New', Courier, monospace;
+            font-weight: bold;
+            font-size: 24px;
+            display: inline-block;
+            padding: 10px;
+            color: rgb(236, 10, 10);
+        }
+        nav .initial li:hover{
+            color:rgb(255, 234, 5);
+        }
+        nav .first{
+            display: flex;
+            flex-direction: row-reverse;
+            
+        }
+        .first li{
+            list-style: none;
+            margin: 2px 1px 1px 5px;
+            
+        }
+        .first li a{
+            text-decoration: none;
+            padding: 10px 20px;
+            font-family:'Courier New', Courier, monospace;
+            font-weight: bold;
+            font-size: 18px; 
+            color: rgb(175, 252, 8);
+        }
+        .first li a:hover{
+            color: cyan;
+        }
+        .main{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 300px;
+        }
+        .main button{
+            border: 2px solid black;
+            padding: 5px 10px;
+        }
+        .main button a{
+            text-decoration: none;
+            font-size: 17px;
+            font-family: 'Courier New', Courier, monospace;
+        }
+        .main button:hover{
+            color: brown;
+            background-color: rgb(98, 92, 92);
+        }
+        .main button a:hover{
+            color: white;
+        }
+        .second{
+            display: flex;
+        }
+        .boxx-1{
+            border: 2px solid black;
+            position: absolute;
+            top: 400px;
+            left: 30px;
+            padding: 10px;
+            width: 350px;
+        }
+        .boxx-2{
+            border: 2px solid black;
+            position: absolute;
+            top: 400px;
+            left: 450px;
+            padding: 10px;
+            width: 350px;
+        }
+        .boxx-3{
+            border: 2px solid black;
+            position: absolute;
+            top: 400px;
+            left: 870px;
+            padding: 10px;
+            width: 350px;
+        }
+        @media only screen and (max-width: 1270px){
+            .boxx-1{
+                padding: 5px;
+                width: 200px;
+                position: absolute;
+                top: 400px;
+                left: 20px;
+            }
+            .boxx-2{
+                padding: 5px;
+                width: 200px;
+                position: absolute;
+                top: 400px;
+                left: 300px;
+            }
+            .boxx-3{
+                padding: 5px;
+                width: 220px;
+                position: absolute;
+                top: 400px;
+                left: 600px;
+            }
+        }
+        @media only screen and (max-width: 870px){
+            .boxx-1{
+                padding: 5px;
+                width: 200px;
+                position: absolute;
+                top: 450px;
+                left: 10px;
+            }
+            .boxx-2{
+                padding: 5px;
+                width: 200px;
+                position: absolute;
+                top: 450px;
+                left: 260px;
+            }
+            .boxx-3{
+                padding: 5px;
+                width: 220px;
+                position: absolute;
+                top: 450px;
+                left: 500px;
+            }
+        }
+        @media only screen and (max-width: 750px){
+            .main{
+                position: absolute;
+                top: 50px;
+                left: 200px;
+            }
+            .second{
+                display: flex;
+                flex-direction: column;
+            }
+            .boxx-1{
+                padding: 5px;
+                width: 180px;
+                position: absolute;
+                top: 360px;
+                left: 30px;
+            }
+            .boxx-2{
+                padding: 5px;
+                width: 180px;
+                position: absolute;
+                top: 360px;
+                left: 240px;
+            }
+            .boxx-3{
+                padding: 5px;
+                width: 200px;
+                position: absolute;
+                top: 360px;
+                left: 450px;
+            }
+        }
+        @media only screen and (max-width: 680px){
+            .boxx-3{
+                display: none;
+            }
+        }
+        @media only screen and (max-width: 450px){
+            
+            .first li a{
+                padding: 10px 6px;
+                font-size: 14px;
+            }
+            .main{
+                position: absolute;
+                top: 30px;
+                left: 100px;
+            }
+            .boxx-1{
+                padding: 5px;
+                width: 200px;
+                position: absolute;
+                top: 240px;
+                left: 90px;
+            }
+            .boxx-2{
+                padding: 5px;
+                width: 200px;
+                position: absolute;
+                top: 440px;
+                left: 90px;
+            }
+            .boxx-3{
+                display: none;
+            }
+        }
+        @media only screen and (max-width: 380px){
+            .boxx-3{
+                display: none;
+            }
+        }
+        @media only screen and (max-width: 330px){
+            .first{
+                padding: 1px;
+                margin: 2px;
+                font-size: 10px;
+            }
+            .main{
+                position: absolute;
+                top: 30px;
+                left: 70px;
+            }
+            .boxx-1{
+                padding: 5px;
+                width: 250px;
+                position: absolute;
+                top: 260px;
+                left: 20px;
+            }
+            .boxx-2{
+                padding: 5px;
+                width: 250px;
+                position: absolute;
+                top: 430px;
+                left: 20px;
+            }
+            .boxx-3{
+                display: none;
+            }
+        }
+        @media only screen and (max-width: 280px){
+            .now{
+                display: none;
+            }
+            .boxx-1{
+                padding: 2px;
+                width: 200px;
+                position: absolute;
+                top: 260px;
+                left: 20px;
+            }
+            .boxx-2{
+                padding: 2px;
+                width: 200px;
+                position: absolute;
+                top: 430px;
+                left: 20px;
+            }
+        }
+        
+        
+    </style>
+</head>
+<body>
+    <div class="containar">
+        <div class="body">
+            <header>   
+                <nav class="navbar">
+                    <ul class="initial">
+                        <li>Portfolio</li>
+                    </ul>
+                    <ul class="first">
+                        <li><a href="">Projects</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li class="now"><a href="first.html">Home</a></li>
+                    </ul>
+                </nav>
+            </header>
+            <div class="main">
+                <h1>About Me</h1>
+                <button><a href="">Hire Me</a></button>
+            </div>
+            <div class="min">
+                <!-- <img src="https://images.pexels.com/photos/7014926/pexels-photo-7014926.jpeg?auto=compress&cs=tinysrgb&w=400" alt=""> -->
+            </div>
+            <div class="second">
+                <div class="boxx-1">
+                    <h3>Full Stack Developer</h3>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Obcaecati, eius? Doloribus expedita nam repellat corrupti! </p>
+                </div>
+                <div class="boxx-2">
+                    <h3>A Coder</h3>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolore ducimus vero voluptates eos cum possimus.</p>
+                </div>
+                <div class="boxx-3">
+                    <h3>A student as well</h3>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Omnis quidem impedit vel minus id! Lorem ipsum dolor sit amet consectetur.
+                    </p>
+                </div>
+            </div>
+        </div>
+        
+        
+    </div>
+    
+</body>
+</html>

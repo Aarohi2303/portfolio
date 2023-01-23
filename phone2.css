@@ -1,0 +1,29 @@
+.imgg img{
+    position: absolute;
+    top: 500px;
+    left: 40px;
+    margin-left: 2px;
+    height: 100px;
+    width: 100px;
+}
+.first li{
+    
+    /* margin: 2px 1px 1px 5px; */
+    
+}
+.first li a{
+    padding: 2px 5px;
+    font-family:'Courier New', Courier, monospace;
+    font-weight: bold;
+    font-size: 8px; 
+    
+}
+.first li a:hover{
+    color: cyan;
+}
+.start{
+    position: absolute;
+    top: 30px;
+    left: 2px;
+    margin-left: 2px;
+}

@@ -1,0 +1,504 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ContactPage</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+
+        }
+
+        .containar {
+            margin-top: 7px;
+            margin-left: 7px;
+            height: 97vh;
+            width: 98vw;
+            border: 1px solid black;
+            background-color: gainsboro;
+        }
+
+        .first li {
+            list-style: none;
+            font-family: cursive;
+            font-size: 24px;
+            color: rgb(247, 13, 13);
+            display: inline;
+        }
+
+        .last {
+            overflow: auto;
+        }
+
+        .last li {
+            float: right;
+            list-style: none;
+        }
+
+        .last li a {
+            text-decoration: none;
+            padding: 0px 20px;
+            color: rgb(199, 96, 11);
+            font-size: 18px;
+        }
+
+        .last li a:hover {
+            color: rgb(13, 143, 198);
+        }
+
+        .box {
+            display: flex;
+            margin: 2px 20px;
+            justify-content: space-between;
+
+        }
+
+        .boxx-1 {
+            padding: 4px 10px;
+            
+        }
+
+        .boxx-1 h3 {
+            padding-left: 9px;
+
+        }
+
+        .boxx-2 {
+            padding: 4px 10px;
+        }
+
+        .boxx-2 h3 {
+            padding-left: 67px;
+        }
+
+        .boxx-3 {
+            padding: 4px 10px;
+            
+        }
+
+        .boxx-3 h3 {
+            padding-left: 59px;
+        }
+
+        .table {
+            border: 1px solid black;
+            background-color: white;
+            height: 55vh;
+            width: 59vw;
+            position: relative;
+            top: 38px;
+            left: 250px;
+        }
+
+        .table h2 {
+            margin-left: 20px;
+        }
+
+        .inside {
+            display: flex;
+            justify-content: space-evenly;
+        }
+
+        .team {
+            border: 1px solid black;
+            height: 200px;
+            width: 600px;
+            position: relative;
+            top: 27px;
+            left: 70px;
+        }
+
+        .team h3 {
+            margin-left: 20px;
+        }
+
+        @media only screen and (max-width: 1180px) {
+            .team {
+                height: 180px;
+                width: 500px;
+                position: relative;
+                top: 27px;
+                left: 60px;
+            }
+        }
+
+        @media only screen and (max-width: 980px) {
+            .team {
+                height: 200px;
+                width: 400px;
+                position: relative;
+                top: 27px;
+                left: 50px;
+            }
+
+        }
+
+        @media only screen and (max-width: 870px) {
+            .team {
+                height: 180px;
+                width: 400px;
+                position: relative;
+                top: 60px;
+                left: 50px;
+            }
+
+            .firsttt {
+                position: relative;
+                left: 70px;
+                top: 0px;
+            }
+            .firsttt input{
+                border: 1px solid black;
+            }
+            .secondd {
+                position: relative;
+                left: 90px;
+                top: 0px;
+            }
+            .secondd input{
+                border: 1px solid black;
+            }
+
+            .thirdd {
+                position: relative;
+                top: 49px;
+                left: -170px;
+                
+            }
+            .thirdd input{
+                border: 1px solid black;
+            }
+        }
+
+        @media only screen and (max-width: 770px) {
+            .team {
+                height: 170px;
+                width: 300px;
+                position: relative;
+                top: 60px;
+                left: 40px;
+            }
+
+            .table {
+                height: 55vh;
+                width: 59vw;
+                position: relative;
+                top: 38px;
+                left: 200px;
+            }
+        }
+
+        @media only screen and (max-width: 650px) {
+            .team {
+                height: 110px;
+                width: 240px;
+                position: relative;
+                top: 110px;
+                left: 20px;
+            }
+
+            .table {
+                height: 55vh;
+                width: 59vw;
+                position: relative;
+                top: 45px;
+                left: 100px;
+            }
+
+            .firsttt {
+                position: relative;
+                left: 90px;
+                top: 0px;
+            }
+
+            .secondd {
+                position: relative;
+                left: 70px;
+                top: 50px;
+            }
+
+            .thirdd {
+                position: relative;
+                top: 80px;
+                left: -230px;
+            }
+        }
+
+        @media only screen and (max-width: 590px) {
+            .firsttt {
+                position: relative;
+                left: 120px;
+                top: 0px;
+            }
+
+            .secondd {
+                position: relative;
+                left: -10px;
+                top: 50px;
+            }
+
+            .thirdd {
+                position: relative;
+                top: 90px;
+                left: -120px;
+            }
+
+            .table {
+                height: 55vh;
+                width: 65vw;
+                /* position: relative;
+                top: 45px;
+                left: 100px; */
+            }
+        }
+
+        @media only screen and (max-width: 500px) {
+            .boxx-3 {
+                position: absolute;
+                top: 170px;
+                left: 100px;
+            }
+
+            .table {
+                position: relative;
+                top: 60px;
+                left: 70px;
+
+            }
+        }
+
+        @media only screen and (max-width: 420px) {
+            .firsttt {
+                position: relative;
+                left: 170px;
+                top: 0px;
+            }
+
+            .thirdd {
+                position: relative;
+                top: 100px;
+                left: -170px;
+            }
+
+            .team {
+                height: 110px;
+                width: 200px;
+                position: relative;
+                top: 130px;
+                left: 30px;
+            }
+
+            .boxx-3 {
+                position: absolute;
+                top: 190px;
+                left: 100px;
+            }
+
+            .table {
+                height: 50vh;
+                width: 59vw;
+            }
+
+            .team {
+                height: 80px;
+                width: 200px;
+
+            }
+        }
+
+        @media only screen and (max-width: 400px) {
+            .team {
+                height: 80px;
+                width: 160px;
+            }
+        }
+
+        @media only screen and (max-width: 350px) {
+            .team {
+                height: 70px;
+                width: 130px;
+                position: relative;
+                left: 30px;
+                top: 130px;
+            }
+
+            .secondd {
+                position: relative;
+                left: 4px;
+                word-wrap: break-word;
+            }
+
+            .last {
+                display: flex;
+                flex-direction: row-reverse;
+
+            }
+
+            .last li a {
+                padding: 6px;
+                margin-top: 2px;
+            }
+
+            .box {
+                margin: 5px;
+            }
+
+            .table {
+                margin-top: 22px;
+            }
+        }
+
+        @media only screen and (max-width: 330px) {
+            .boxx-1 {
+                position: absolute;
+                top: 80px;
+                left: 20px;
+
+            }
+
+            .boxx-2 {
+                position: relative;
+                left: 28px;
+                top: 23px;
+            }
+
+            .boxx-3 {
+                position: absolute;
+                top: 200px;
+                left: 10px;
+            }
+        }
+
+        @media only screen and (max-width: 300px) {
+            .table {
+                height: 40vh;
+                width: 74vw;
+                position: relative;
+                top: 80px;
+                left: 40px;
+            }
+
+            .team {
+                height: 25px;
+                width: 160px;
+                position: relative;
+                left: 10px;
+                top: 120px;
+            }
+
+            .team h3 {
+                font-size: 10px;
+            }
+        }
+
+        @media only screen and (max-width: 250px) {
+            .navbar .last li a {
+                padding: 2px;
+                margin-top: 1px;
+            }
+
+            .boxx-1 {
+                position: absolute;
+                left: 2px;
+                top: 74px;
+            }
+
+            .boxx-2 {
+                position: relative;
+                top: 2px;
+                left: 12px;
+                font-size: 15px;
+            }
+        }
+
+        @media only screen and (max-width: 240px) {
+            .table {
+                height: 40vh;
+                width: 84vw;
+                position: relative;
+                top: 210px;
+                left: 10px;
+            }
+
+            .boxx-1 {
+                position: absolute;
+                top: 90px;
+                left: 70px;
+            }
+
+            .boxx-2 {
+                position: absolute;
+                top: 160px;
+                left: 5px;
+            }
+
+            .boxx-3 {
+                position: absolute;
+                top: 230px;
+                left: 10px;
+            }
+
+            .navbar .last li a {
+                padding: 1px;
+                margin-top: 4px;
+                font-size: 17px;
+
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="containar">
+        <header>
+            <nav class="navbar">
+                <ul class="first">
+                    <li>PortFolio</li>
+                </ul>
+                <ul class="last">
+                    <li><a href="#">Projects</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="first.html">Home</a></li>
+                </ul>
+            </nav>
+        </header>
+        <div class="box">
+            <div class="boxx-1">
+                <h3>Phone</h3>
+                <p>6203902632</p>
+            </div>
+            <div class="boxx-2">
+                <h3>Email</h3>
+                <p>aarohikashyap2685@gmail.com</p>
+            </div>
+            <div class="boxx-3">
+                <h3>Address</h3>
+                <p>Lakhibag, Manpur, Gaya, Bihar</p>
+            </div>
+        </div>
+        <div class="table">
+            <h2>Get in Touch</h2>
+            <div class="inside">
+                <div class="firsttt">
+                    Name:<input type="text">
+                </div>
+                <div class="secondd">
+                    Email:<input type="email" name="" id="">
+                </div>
+                <div class="thirdd">
+                    Number:<input type="number" name="" id="">
+                </div>
+            </div>
+            <div class="team">
+                <h3>Message</h3>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
